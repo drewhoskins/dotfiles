@@ -1,0 +1,2 @@
+source ~/.bash_include
+alias cdps="cd ~/stripe/pay-server"

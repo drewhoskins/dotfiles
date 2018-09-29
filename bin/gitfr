@@ -1,0 +1,5 @@
+set -x
+git fetch
+if [ $? -eq 0 ]; then
+   git rebase
+fi

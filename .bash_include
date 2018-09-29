@@ -1,0 +1,4 @@
+export PATH="$HOME/bin:$PATH"
+alias gitcav="git commit -A --amend -C HEAD"
+alias gittm="git branch --set-upstream-to=origin/master"
+alias gitpoh="git push -f origin HEAD"
