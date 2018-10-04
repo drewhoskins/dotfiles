@@ -2,3 +2,4 @@ source ~/.bash_include
 alias cdps="cd ~/stripe/pay-server"
 alias lint="~/stripe/pay-server/scripts/bin/lint -n"
 alias genpkg="scripts/bin/remote-script scripts/packages/gen-packages.rb"
+alias tc="pay exec scripts/bin/typecheck"
