@@ -1,0 +1,2 @@
+set -x
+scripts/bin/remote-script sorbet/shim_generation/make_accessible.rb $*
