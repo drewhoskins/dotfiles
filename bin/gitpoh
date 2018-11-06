@@ -1,0 +1,8 @@
+set -x
+~/stripe/pay-server/scripts/bin/lint
+if [ $? -eq 0 ]
+then
+   git push -f origin HEAD
+else
+   echo "Lint failed, exiting"
+fi
