@@ -1,0 +1,2 @@
+brew install gnu-sed # makes replace work
+git config --global core.editor emacs # avoids vim like the plague
