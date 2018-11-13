@@ -1,5 +1,5 @@
 set -x
-~/stripe/pay-server/scripts/bin/lint
+~/stripe/pay-server/scripts/bin/lint -n
 if [ $? -eq 0 ]
 then
    git push -f origin HEAD
