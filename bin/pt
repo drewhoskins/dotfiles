@@ -1,0 +1,9 @@
+gap
+args=${@:2}
+if [ -z "$args" ]; then
+   pay test $*
+elif [ $2 == "-l" ]; then
+   pay test $*
+else
+   pay test $1 -n "/$args/"
+fi

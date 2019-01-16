@@ -3,4 +3,4 @@ alias cdps="cd ~/stripe/pay-server"
 alias lint="gap; ~/stripe/pay-server/scripts/bin/lint -n"
 alias genpkg="gap; scripts/bin/remote-script scripts/packages/gen-packages.rb"
 alias tc="gap; pay exec scripts/bin/typecheck"
-alias pt="gap; pay test"
+
