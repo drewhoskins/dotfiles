@@ -7,3 +7,6 @@ alias gitrhh="git reset --hard HEAD"
 alias gitcoh="git checkout HEAD --"
 alias gitcom="git checkout origin/master --"
 alias gitbrd="git branch -D"
+gitcob() {
+  git checkout -b drewhoskins_$1 origin/master
+}

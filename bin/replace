@@ -1,6 +1,9 @@
 #!/bin/sh
 
-# Third argument is optional git grep, or else use arg 1
+# Finds files that contain a regex with git grep, then does a gsed find/replace within those files
+# arg 1: by default, fed to git grep (for the grep) and gsed (for the source of the replace)
+# arg 2: the thing you want to replace the source with
+# arg 3: (optional) fed to git grep in case its format diverges from what's fed to gsed (like if the regex format is different)
 if [ $# -eq 2 ]; then
   git=$1;
 else
