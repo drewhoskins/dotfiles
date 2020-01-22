@@ -9,5 +9,5 @@ alias gitcom="git checkout origin/master --"
 alias gitbrd="git branch -D"
 alias gitco="git checkout"
 gitcob() {
-  git checkout -b $1 origin/master
+  git checkout -b drewhoskins_$1 origin/master
 }
