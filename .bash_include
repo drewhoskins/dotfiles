@@ -10,5 +10,10 @@ alias gitcom="git checkout origin/master --"
 alias gitbrd="git branch -D"
 alias gitco="git checkout"
 gitcob() {
-  git checkout -b drewhoskins_$1 origin/master
+  if [ $# -eq 1 ]; then
+    branch=origin/master;
+  else
+    branch=$2;
+  fi
+  git checkout -b drewhoskins_$1 $branch
 }
