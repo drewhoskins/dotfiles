@@ -1,10 +1,10 @@
 set -x
 pushd ~/stripe/pay-server/
 
-if [ $2 -neq '-f' ] # fast/force
+if [ "$1" != '-f' ] # fast/force
 then
 ~/stripe/pay-server/scripts/bin/lint -n
-end
+fi
 if [ $? -eq 0 ]
 then
    git push -f origin HEAD
