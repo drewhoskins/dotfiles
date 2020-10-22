@@ -1,12 +1,13 @@
-set -x
 pushd ~/stripe/pay-server/
 
 if [ "$1" != '-f' ] # fast/force
 then
+echo "Linting ..."
 ~/stripe/pay-server/scripts/bin/lint -n
 fi
 if [ $? -eq 0 ]
 then
+   echo "Pushing ..."
    git push -f origin HEAD
 else
    echo "Lint failed, exiting"
