@@ -1,5 +1,6 @@
 source ~/.bash_include
 alias cdps="cd ~/stripe/pay-server"
+alias cdtr="cd ~/stripe/temporal-ruby"
 alias lint="gap; ~/stripe/pay-server/scripts/bin/lint -n"
 alias genpkg="gap; scripts/bin/remote-script scripts/packages/gen-packages.rb"
 alias tc="gap; pay exec scripts/bin/typecheck"
