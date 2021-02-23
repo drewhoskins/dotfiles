@@ -1,6 +1,7 @@
 export PATH="$HOME/bin:$PATH"
 alias gitcach="git commit --amend -C HEAD"
 alias gitcav="git commit -a --amend -C HEAD"
+alias gitcam="git commit -am"
 alias gittm="git branch --set-upstream-to=origin/master"
 alias gitls="git show $1 --pretty="" --name-status"
 alias gitbr="git branch"
