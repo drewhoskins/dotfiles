@@ -1,4 +1,6 @@
 export PATH="$HOME/bin:$PATH"
+# prompt shows two directory levels.
+PS1='${PWD#"${PWD%/*/*}/"} \$ '
 alias gitcach="git commit --amend -C HEAD"
 alias gitcav="git commit -a --amend -C HEAD"
 alias gitcam="git commit -am"
