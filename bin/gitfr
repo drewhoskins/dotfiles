@@ -15,7 +15,8 @@ require_clean_work_tree () {
 # while still at the console
 require_clean_work_tree
 
-git fetch
+# --no-show-forced-updates is for speed
+git fetch --no-show-forced-updates
 if [ $? -eq 0 ]; then
    git rebase
 fi
