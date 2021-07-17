@@ -1,15 +1,29 @@
-pushd ~/stripe/pay-server/
+if [ "$1" != '-f' ]; then # -f = skip lint
+  current_dir=$(basename "$PWD")
+  if [ "$current_dir" = 'pay-server' ]; then
+    echo "Linting ..."
+    ~/stripe/pay-server/scripts/bin/lint -n
+    if [ $? -ne 0 ]; then   
+      echo "Lint failed, exiting"
+      exit 1
+    fi
+  elif [ "$current_dir" = 'zoolander' ] || [ "$current_dir" = 'uppsala' ]; then
+    echo "Formatting build ..."
+    ~/stripe/zoolander/uppsala/scripts/format_build_files.sh
+    if [ $? -ne 0 ]; then
+      echo "Formatting build files failed, exiting"
+      exit 1
+    fi
+    echo "Formatting java ..."
+    ~/stripe/zoolander/uppsala/scripts/format_java_files.sh
+    if [ $? -ne 0 ]; then
+      echo "Formatting java files failed, exiting"
+      exit 1
+    fi
 
-if [ "$1" != '-f' ] # fast/force
-then
-echo "Linting ..."
-~/stripe/pay-server/scripts/bin/lint -n
+    echo "Committing any formatting ..."
+    git commit -am "Formatting"
+  fi
 fi
-if [ $? -eq 0 ]
-then
-   echo "Pushing ..."
-   git push -f origin HEAD
-else
-   echo "Lint failed, exiting"
-fi
-popd
+echo "Pushing ..."
+git push -f origin HEAD
