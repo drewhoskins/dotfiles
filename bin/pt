@@ -1,9 +1,9 @@
 gap
 args=${@:2}
 if [ -z "$args" ]; then
-   pay test $*
+   pay test --colorize $*
 elif [ $2 == "-l" ]; then
-   pay test $*
+   pay test --colorize $*
 else
-   pay test $1 -n "/$args/"
+   pay test --colorize $1 -n "/$args/"
 fi
