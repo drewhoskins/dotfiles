@@ -1,0 +1,1 @@
+pay exec /pay/src/temporal/tctl --ad temporal-server.service.consul:7233 --ns all-ruby workflow show -w $1

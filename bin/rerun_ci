@@ -1,0 +1,2 @@
+set -x
+pay ci:run-failed
