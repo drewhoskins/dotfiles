@@ -5,6 +5,9 @@ alias gitcach="git commit --amend -C HEAD"
 alias gitcav="git commit -a --amend -C HEAD"
 alias gitcam="git commit -am"
 alias gittm="git branch --set-upstream-to=origin/master"
+gitt() {
+  git branch --set-upstream-to=$1;
+}
 alias gitls="git show $1 --pretty="" --name-status"
 alias gitbr="git branch"
 alias gitst="git status"

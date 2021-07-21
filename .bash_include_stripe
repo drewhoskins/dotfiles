@@ -1,7 +1,7 @@
 source ~/.bash_include
 alias cdps="cd ~/stripe/pay-server"
-alias cdstr="cd ~/stripe/temporal-ruby;pwd"
-alias cdctr="cd ~/stripe/GitHub/temporal-ruby;pwd"
+alias cdstr="cd ~/stripe/temporal-ruby"
+alias cdctr="cd ~/coinbase/temporal-ruby"
 alias lint="gap; ~/stripe/pay-server/scripts/bin/lint -n"
 alias genpkg="gap; ./scripts/bin/remote-script --wait-for-autogen scripts/packages/gen-packages.rb"
 alias tc="gap; pay exec scripts/bin/typecheck"
