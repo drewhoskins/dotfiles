@@ -1,0 +1,4 @@
+set -x
+./scripts/bin/remote-script scripts/dev/bundle update temporal-ruby
+./scripts/bin/update-bundle-bzl-checksums
+./scripts/bin/remote-script sorbet/shim_generation/gems.rb -r temporal-ruby
