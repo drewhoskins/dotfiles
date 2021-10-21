@@ -8,3 +8,5 @@ alias genpkg="gap; ./scripts/bin/remote-script --wait-for-autogen scripts/packag
 alias tc="gap; pay exec scripts/bin/typecheck"
 alias pst="pay start temporal-server.service.test"
 alias prst="pay restart temporal-server.service.test"
+export GOPATH=~/go
+export PATH="$GOPATH/bin:$PATH"
