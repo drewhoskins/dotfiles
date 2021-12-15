@@ -9,13 +9,13 @@ if [ "$1" != '-f' ]; then # -f = skip lint
     fi
   elif [ "$current_dir" = 'zoolander' ] || [ "$current_dir" = 'uppsala' ]; then
     echo "Formatting build ..."
-    ~/stripe/zoolander/uppsala/scripts/format_build_files.sh
+    ~/stripe/zoolander/dev/format-build
     if [ $? -ne 0 ]; then
       echo "Formatting build files failed, exiting"
       exit 1
     fi
     echo "Formatting java ..."
-    ~/stripe/zoolander/uppsala/scripts/format_java_files.sh
+    ~/stripe/zoolander/dev/format-java
     if [ $? -ne 0 ]; then
       echo "Formatting java files failed, exiting"
       exit 1
