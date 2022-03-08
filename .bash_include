@@ -4,7 +4,7 @@ PS1='${PWD#"${PWD%/*/*/*}/"} \$ '
 alias gitcach="git commit --amend -C HEAD"
 alias gitcav="git commit -a --amend -C HEAD"
 alias gitcam="git commit -am"
-alias gitcam="git commit -m"
+alias gitcm="git commit -m"
 alias gittm="git branch --set-upstream-to=origin/master"
 gitt() {
   git branch --set-upstream-to=$1;
