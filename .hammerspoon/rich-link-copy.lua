@@ -68,7 +68,7 @@ local function getRichLinkToCurrentChromeTab()
     ["figma.com"] = ":figma-:",
     ["git.corp.stripe.com"] = ":octocat:",
     ["github.com"] = ":octocat:",
-    ["jira.corp.stripe.com"] = ":jira:",
+    ["jira.corp.stripe.com"] = ":jira-riot:",
     ["paper.dropbox.com"] = ":paper:",
     ["whimsical.com"] = ":whimsical:",
     ["groups.google.com"] = ":e-mail:",

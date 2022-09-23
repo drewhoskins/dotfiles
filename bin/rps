@@ -1,0 +1,1 @@
+pay remote new $1 --repo stripe-internal/pay-server@drewhoskins_$1 --open-code --notify-on-ready
