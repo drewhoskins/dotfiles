@@ -62,16 +62,15 @@ local function getRichLinkToCurrentChromeTab()
   -- Add fun emoji to the link depending on the source.
   -- 99 times 100 I'm pasting this to Slack.
   local emojiPatterns = {
-    ["confluence.corp.stripe.com"] = ":confluence:",
-    ["docs.google.com/document"] = ":google-docs:",
-    ["docs.google.com/spreadsheets"] = ":google-sheets:",
-    ["figma.com"] = ":figma-:",
-    ["git.corp.stripe.com"] = ":octocat:",
+    ["docs.google.com/document"] = ":google_docs:",
+    ["docs.google.com/spreadsheets"] = ":google_sheets:",
+    ["docs.google.com/presentation"] = ":google_slides:",
+    ["figma.com"] = ":figma:",
     ["github.com"] = ":octocat:",
-    ["jira.corp.stripe.com"] = ":jira-riot:",
-    ["paper.dropbox.com"] = ":paper:",
+    ["temporalio.atlassian.net"] = ":jira-logo:",
     ["whimsical.com"] = ":whimsical:",
     ["groups.google.com"] = ":e-mail:",
+    ["notion.so"] = ":notion:",
   }
 
   for pattern, emoji in pairs(emojiPatterns) do
