@@ -1,9 +1,4 @@
 brew install gnu-sed # makes replace work
-git config --global core.editor emacs # avoids vim like the plague
-# Tell git to only fetch relevant remote branches
-git config --add remote.origin.fetch "+refs/heads/$USER-*:refs/remotes/origin/$USER-*"
-git config --add remote.origin.fetch "+refs/heads/$USER/*:refs/remotes/origin/$USER/*"
-git config --add remote.origin.fetch "+refs/heads/master:refs/remotes/origin/master"
-git config --add remote.origin.fetch "+refs/heads/master-passing-tests:refs/remotes/origin/master-passing-tests"
-git config --unset remote.origin.fetch "heads/\*"
+git config --global core.editor code # avoids vim like the plague
 brew install git-absorb
+echo 'source .bash_include' >> ~/.bash_profile
