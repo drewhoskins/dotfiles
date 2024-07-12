@@ -5,7 +5,7 @@ alias gitcach="git commit --amend -C HEAD"
 alias gitcav="git commit -a --amend -C HEAD"
 alias gitcam="git commit -am"
 alias gitcm="git commit -m"
-alias gittm="git branch --set-upstream-to=origin/master"
+alias gittm="git branch --set-upstream-to=origin/main"
 gitt() {
   git branch --set-upstream-to=$1;
 }
@@ -16,13 +16,13 @@ alias gitbrv="git branch -v"
 alias gitrhh="git reset --hard HEAD"
 alias gitcoh="git checkout HEAD --"
 alias gitcooh="git checkout origin/HEAD --"
-alias gitcom="git checkout origin/master --"
+alias gitcom="git checkout origin/main --"
 alias gitbrd="git branch -D"
 alias gitco="git checkout"
 alias gitria="git rebase -i --autosquash"
 gitcob() {
   if [ $# -eq 1 ]; then
-    branch=origin/master;
+    branch=origin/main;
   else
     branch=$2;
   fi
